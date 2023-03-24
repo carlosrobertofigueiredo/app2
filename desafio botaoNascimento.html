@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="calculaData()">
+      Calcular
+    </button>
+    <script>
+        function calculaData(){
+        let data = prompt("Informe sua data de nascimento (dd/mm/aaaa):");
+        let dataFormatada = "";
+
+        if (data) {
+            let partesData = data.split("/");
+            let dia = partesData[0];
+            let mes = partesData[1];
+            let ano = partesData[2];
+
+            dataFormatada = `${ano}-${mes}-${dia}`;
+        }
+         document.write(dataFormatada)
+    }
+    </script>
+
+
+
+</body>
+
+</html>

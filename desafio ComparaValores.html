@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // solicita ao usuário os valores numéricos e armazena nas variáveis
+        let num1 = parseFloat(prompt("Digite o primeiro número:"));
+        let num2 = parseFloat(prompt("Digite o segundo número:"));
+
+        // verifica se num1 é maior que num2
+        if (num1 > num2) {
+            // realiza a multiplicação e divisão dos valores e armazena nas variáveis
+            let multiplicacao = num1 * num2;
+            let divisao = num1 / num2;
+
+            // exibe a multiplicação e divisão no navegador
+            document.write("A multiplicação de " + num1 + " e " + num2 + " é igual a " + multiplicacao + ".<br>");
+            document.write("A divisão de " + num1 + " por " + num2 + " é igual a " + divisao + ".");
+        } else {
+            // exibe mensagem de erro no navegador
+            document.write("Erro: O primeiro número deve ser maior que o segundo.");
+        }
+
+    </script>
+
+
+</body>
+
+</html>
